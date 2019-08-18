@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm a Server Developer. :) 
 
-### Skill   
+## Skill   
 1. Spring Boot Framework
    * Web MVC (Restful Api)
    * JPA (Hibernate)
@@ -27,20 +27,20 @@ I'm a Server Developer. :)
    * DDD
    * MariaDB
    
-### Experience
+## Experience
 1. Intern - [Naver Business Platform](https://www.nbp-corp.com/) / Data Platform (May 2018 ~ Jun 2018)
    * team project - Build introduce web page using NCP 
    * personal project - Build hadoop monitoring system
 2. Server Developer - [Leadsoft](https://www.leadsoft.co.kr/) / Data Tech Lab (Jan 2019 ~ Now)
    * Develop server system with Spring boot and Micro-service architecture.
 
-### Education 
+## Education 
 Sangmyung univ - Computer science
 * Bachelor degree
 * Master Degree
    * [Privacy-Preserving Top-k Route Computation in Indoor Environments.](https://ieeexplore.ieee.org/document/8478274) 
    * [Application of Local Differential Privacy to Collection of Indoor Positioning Data.](https://ieeexplore.ieee.org/document/8253434)
 
-### Contact me
+## Contact me
 
 [donald@leadsoft.co.kr](mailto:donald@leadsotf.co.kr)
