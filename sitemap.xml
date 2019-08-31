@@ -7,46 +7,51 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-  <url>
-    <loc>https://donald-dh.github.io/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/about/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/archive/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/tags/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/if-kakao-2019/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/jpa-native-query-and-hibernate-first-level-cache/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://donald-dh.github.io/donald-dh.github.io/hello-world/</loc>
-    <lastmod>2019-08-31T08:08:59+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+<url>
+  <loc>https://donald-dh.github.io/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/about/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/archive/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/tags/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/osi-seven-layer-purpose/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/if-kakao-2019/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/jpa-native-query-and-hibernate-first-level-cache/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://donald-dh.github.io/donald-dh.github.io/hello-world/</loc>
+  <lastmod>2019-08-31T15:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 
 </urlset>
