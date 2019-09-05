@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://donald-dh.github.io/sitemap.xml
