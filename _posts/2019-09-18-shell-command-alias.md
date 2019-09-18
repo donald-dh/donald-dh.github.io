@@ -92,6 +92,29 @@ root@d809c2ddbec2:/#
 
 **아주 적절하다.** :) 
 
-### 결론
+## 결론
 티끌모아 태산이라 했다. 
 얼른 alias를 등록하여 생산성을 향상시켜보잣!
+
+---
+
+## 추가 내용 
+### alias 유지 
+터미널 세션에서 alias를 지정하고 **세션을 종료하게 되면 해당 alias가 날라간다.** 
+세션이 종료되더라도 alias 정보가 유지하기 위해 `~/.bashrc`(나는 zsh을 사용하고 있으므로 `~/.zshrc`)에 alias 명령어들을 명시해준다. 
+물론 함수도 동일하게 명시하면 된다. 
+
+```
+...
+## Donald Alias
+alias dps='docker ps'
+alias dpsA='docker ps -a'
+...
+alias dsh='dsh'
+
+function dsh() {
+  docker exec -it $1 bash
+}
+```
+
+관련해서 피드백해주신 글또의 이동규님 감사합니다 :) 
