@@ -3,10 +3,11 @@
   {% include head.html %}
   <body>
     {% include nav.html %}
-    {% include google-ad-flat.html %}
 
     <div id="main" role="main" class="container">
+      {% include google-ad-flat.html %}
       {{ content }}
+      {% include google-ad-flat.html %}
     </div>
 
     <div class="wrapper-footer">
@@ -18,8 +19,6 @@
     </div>
 
     {% include analytics.html %}
-    {% include google-ad-flat.html %}
-
     <!-- disqus count -->
     <script id="dsq-count-scr" src="//donald-dh.disqus.com/count.js" async></script>
   </body>
