@@ -14,6 +14,8 @@ comments: true
 [2019-09-25 01:17:37,919] WARN Resetting first dirty offset of __consumer_offsets-31 to log start offset 195 since the checkpointed offset 191 is invalid. (kafka.log.LogCleanerManager$)
 ``` 
 
+![resetting-warn-logs](../images/docs/20190925/resetting-warn-logs.png)
+
 로그를 해석해보면 다음과 같다(맞나..?).
 
 > 체크포인트된 오프셋 `191`이 유효하지 않아서 `__consumer_offsets-31`의 첫번째 Dirty 오프셋을 로그 시작 오프셋인 `195`로 재설정한다.
