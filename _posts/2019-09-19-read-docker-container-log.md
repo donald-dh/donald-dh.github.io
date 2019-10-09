@@ -26,13 +26,13 @@ GUI 툴인 `portainer`를 사용하거나 `docker logs` 명령어로 확인할 �
 **해당 컨테이너의 로그 디렉토리 또한 이 명령어를 통해 확인할 수 있다.** 
 참고로 무수히 많은 정보가 나오니, 잘 찾아야 한다(사진과 같이 `grep LogPath` 명령어를 추가하는 것을 추천한다.). 
 
-![docker_inspect](../images/docs/20190919/docker_inspect.png)
+![](../images/docs/20190919/docker_inspect.png)
 
 도커 로그는 기본적으로 json 형태로 저장한다([참고: 도커 로깅 드라이버](https://docs.docker.com/config/containers/logging/plugins/)). 
 해당 컨테이너도 별도의 로깅 드라이버 설정 없이 생성했기 때문에 *기본적으로 json 형태로 저장한다.* 
 `LogPath`를 알았으니 본격적으로 로그를 찾아보자. 
 
-![dir_not_found](../images/docs/20190919/dir_not_found.png)
+![](../images/docs/20190919/dir_not_found.png)
 
 없다..?(*눼?*)
 
@@ -58,7 +58,8 @@ tty에 관해서 살펴보니 터미널과 같은 개념이었다.
 또한, `tail -n ` 명령어를 통해 접근해봐도 해당 로그 파일이 카프카 컨테이너의 로그 파일임을 확인할 수 있었다. 
 
 ![log_dir](../images/docs/20190919/log_dir.png)  
-![kafka_log](../images/docs/20190919/kafka-log.png)
+
+![](../images/docs/20190919/kafka-log.png)
 
 ### 마무리
 위 과정을 통해 도커 컨테이너의 로그가 저장되는 로그 파일의 위치를 접근할 수 있었다. 
