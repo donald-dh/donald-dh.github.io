@@ -46,9 +46,9 @@ comments: true
 * 모든 리스너는 보안을 적용하지 않는다. 
 * 브로커의 자동 토픽 생성 옵션을 사용한다. 
 
-## docker-compose 작성
+## docker-compose.yml 작성
 위 구조와 브로커 설정을 바탕으로 구성된 docker-compose.yml 파일은 다음과 같다. 
-전체 코드는 [관련 레포지토리](https://github.com/donald-dh/kafka-study/blob/master/src/kafka-cluster/docker-compose.yml)를 통해 공개한다. 
+전체 스크립트는 [다음 링크](../codes/20191013/docker-compose.yml)을 참고한다. 
 
 ```
 # kafak-cluster
@@ -109,6 +109,6 @@ services:
 
 ## 마무리
 docker-compose 을 통해 주키퍼와 카프카 브로커로 구성된 카프카 클러스터를 구성했다. 
-이 후는 구성된 클러스터를 보다 관리하기 쉽도록 **Kafka Manager(카프카 매니저)** 를 붙혀보도록 하겠다. 
+이 후는 구성된 클러스터를 보다 관리하기 쉽도록 **Kafka Manager(카프카 매니저)** 를 붙혀보도록 하겠다([링크](2019-10-15-kafka-manager-setup.md)). 
 
  
