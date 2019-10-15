@@ -1,0 +1,90 @@
+# kafka-cluster with kafka manager
+# https://donald-dh.github.io/donald-dh.github.io/kafka-manager-setup
+
+version: '3.5'
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:5.3.1
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    networks:
+      - kafka-dev
+
+  broker00:
+    image: confluentinc/cp-kafka:5.3.1
+    container_name: broker00
+    depends_on:
+      - zookeeper
+    ports:
+      - '9092:9092'
+      - '19092:19092'
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: INTERNAL_LISTENER://broker00:19092,EXTERNAL_LISTENER://broker00:9092
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL_LISTENER://broker00:19092,EXTERNAL_LISTENER://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL_LISTENER:PLAINTEXT,EXTERNAL_LISTENER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL_LISTENER
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+    networks:
+      - kafka-dev
+
+  broker01:
+    image: confluentinc/cp-kafka:5.3.1
+    container_name: broker01
+    depends_on:
+      - zookeeper
+    ports:
+      - '9093:9093'
+      - '29092:29092'
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: INTERNAL_LISTENER://broker01:29092,EXTERNAL_LISTENER://broker01:9093
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL_LISTENER://broker01:29092,EXTERNAL_LISTENER://localhost:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL_LISTENER:PLAINTEXT,EXTERNAL_LISTENER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL_LISTENER
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+    networks:
+      - kafka-dev
+
+  broker02:
+    image: confluentinc/cp-kafka:5.3.1
+    container_name: broker02
+    depends_on:
+      - zookeeper
+    ports:
+      - '9094:9094'
+      - '39092:39092'
+    environment:
+      KAFKA_BROKER_ID: 3
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: INTERNAL_LISTENER://broker02:39092,EXTERNAL_LISTENER://broker02:9094
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL_LISTENER://broker02:39092,EXTERNAL_LISTENER://localhost:9094
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL_LISTENER:PLAINTEXT,EXTERNAL_LISTENER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL_LISTENER
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+    networks:
+      - kafka-dev
+
+  kafka-manager:
+    image: hlebalbau/kafka-manager:stable
+    container_name: kafka-manager
+    depends_on:
+      - zookeeper
+    ports:
+      - "9000:9000"
+    environment:
+      ZK_HOSTS: zookeeper:2181
+      KAFKA_MANAGER_AUTH_ENABLED: "true"
+      KAFKA_MANAGER_USERNAME: username
+      KAFKA_MANAGER_PASSWORD: password
+    networks:
+      - kafka-dev
+
+networks:
+  kafka-dev:
+    name: kafka-dev
