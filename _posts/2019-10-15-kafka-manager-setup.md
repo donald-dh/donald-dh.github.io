@@ -70,6 +70,8 @@ docker-compose 명령어를 통해 컨테이너들을 실행시킬 수 있다.
 
 ![](../images/docs/20191015/b77b59ed.png)
 
+`Cluster Zookeeper Hosts` 는 카프카 클러스터와 카프카 매니저가 동일한 네트워크로 구성되어 있으므로, `zookeeper:2181` 를 입력하여 주키퍼 노드를 찾는다. 
+
 필수 값 이외에도 카프카 서버 메트릭 연동을 위한 `Enable JMX Polling` 옵션이나, 
 컨슈머 정보를 연동하기 위한 `Poll consumer information` 옵션을 추가할 수 있다. 
 클러스터 모니터링 옵션 수정은 `Cluster` - `List` - `Modify` 메뉴를 통해 수정할 수 있다. 
