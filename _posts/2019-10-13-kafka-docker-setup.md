@@ -50,8 +50,8 @@ comments: true
 위 구조와 브로커 설정을 바탕으로 구성된 docker-compose.yml 파일은 다음과 같다. 
 전체 스크립트는 [다음 링크](../codes/20191013/docker-compose.yml)을 참고한다. 
 
-```
-# kafak-cluster
+```yaml
+# kafka-cluster
 # https://donald-dh.github.io/donald-dh.github.io/kafka-docker-setup
 
 version: '3.5'
