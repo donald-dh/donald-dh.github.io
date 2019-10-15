@@ -109,6 +109,6 @@ services:
 
 ## 마무리
 docker-compose 을 통해 주키퍼와 카프카 브로커로 구성된 카프카 클러스터를 구성했다. 
-이 후는 구성된 클러스터를 보다 관리하기 쉽도록 **Kafka Manager(카프카 매니저)** 를 붙혀보도록 하겠다([링크](2019-10-15-kafka-manager-setup.md)). 
+이 후는 구성된 클러스터를 보다 관리하기 쉽도록 **Kafka Manager(카프카 매니저)** 를 붙혀보도록 하겠다([링크]([이전 포스트](https://donald-dh.github.io/donald-dh.github.io/kafka-docker-setup/))). 
 
  

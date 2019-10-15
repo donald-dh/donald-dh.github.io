@@ -6,7 +6,7 @@ comments: true
 ---
 
 ## 들어가며 
-[이전 포스트](2019-10-13-kafka-docker-setup.md)에서는 docker-compose 명령어를 통해 카프카 클러스터를 구성해봤다. 
+[이전 포스트](https://donald-dh.github.io/donald-dh.github.io/kafka-docker-setup/)에서는 docker-compose 명령어를 통해 카프카 클러스터를 구성해봤다. 
 구성된 카프카 클러스터는 개발 간 다양한 요구사항에 맞춰 운영될 것이다. 
 하지만 이런 운영을 단순한 CLI 환경에서 다루는 것은 쉽지 않은 일이다. 
 그렇기 때문에 이번 글에서는 **보다 간편한 카프카 클러스터 운영을 위해 카프카 관리 웹 UI 툴인 카프카 매니저(kafka manager)를 연동해본다.** 
@@ -22,7 +22,7 @@ comments: true
 * latest: 마스터 브런치를 기반으로 주기적으로 빌드. 프로덕션 환경에서는 추천하지 않음.
 
 ## docker-compose.yml 작성
-작성되는 docker-compose.yml 파일은 [이전 포스트](2019-10-13-kafka-docker-setup.md)에서 작성한 스크립트에 카프카 매니저 부분을 추가한다. 
+작성되는 docker-compose.yml 파일은 [이전 포스트](https://donald-dh.github.io/donald-dh.github.io/kafka-docker-setup/)에서 작성한 스크립트에 카프카 매니저 부분을 추가한다. 
 전체 스크립트는 [다음 링크](../codes/20191015/docker-compose.yml)을 참고한다. 
 
 ```yaml
